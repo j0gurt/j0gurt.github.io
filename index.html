@@ -3,8 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>My medium</title>
+    <link rel="stylesheet" href="src/styles/app.css" media="screen" title="no title">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <my-medium-app></my-medium-app>
+    <script type="text/javascript" src='src/components/ViewComponent.js'></script>
+    <script type="text/javascript" src='src/components/app.js'></script>
+    <script type="text/javascript" src='src/components/Header.js'></script>
+    <script type="text/javascript" src='src/components/NewsList.js'></script>
+    <script type="text/javascript" src='src/components/SideBar.js'></script>
+    <script type="text/javascript" src='src/components/NewsFactory.js'></script>
+    <script type="text/javascript">
+      new App('my-medium-app');
+      new NewsList('news-list')
+    </script>
   </body>
 </html>

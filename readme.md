@@ -1,2 +1,7 @@
 ## My medium
-This site works only in latest Chrome Canary
+### CSS grid base template.
+To run this, you need:
+- latest Chrome Canary
+- turn on the experimental Web Platform features flag in chrome://flags
+
+Enjoy!

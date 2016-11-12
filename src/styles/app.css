@@ -1,0 +1,17 @@
+global-header{
+   grid-area: header;
+}
+news-list{
+  grid-area: main;
+}
+news-side-bar{
+   grid-area: sidebar;
+}
+my-medium-app{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header"
+                       "main main sidebar";
+  align-items: center;
+}
