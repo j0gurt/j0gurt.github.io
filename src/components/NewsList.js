@@ -1,7 +1,7 @@
 class NewsList extends ViewComponent{
   constructor(tag){
     super(tag);
-    this.getNews('top', 'hacker-news');
+    this.getNews('latest', 'the-next-web');
   }
   async getNews(sortBy, source){
     var news = await new NewsFactory(sortBy, source).getNews();

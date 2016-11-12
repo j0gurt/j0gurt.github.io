@@ -53,6 +53,10 @@ news-list-item{
   padding-bottom: 20px;
   display: block;
 }
+.news-list-item-link{
+  color: cornflowerblue;
+  text-decoration: none;
+}
 my-medium-app{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
