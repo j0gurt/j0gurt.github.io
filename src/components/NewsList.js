@@ -7,16 +7,15 @@ class NewsList extends ViewComponent{
     var news = await new NewsFactory(sortBy, source).getNews();
     this.render({
       news: this.renderNewsItems(news.articles).join(' '),
-      title: 'News List'
+      title: source
+              .split('-')
+              .map(s => s.charAt(0).toUpperCase() + s.slice(1))
+              .join(' ')
     });
   }
   renderNewsItems(newsList){
     return newsList.map((news)=>{
-      return `
-        <h3>${news.title}</h3>
-        <div>${news.description}</div>
-        <hr>
-      `
+      return new NewsItem().template(news);
     });
   }
   template(data){
